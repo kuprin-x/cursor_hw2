@@ -26,10 +26,27 @@ class Wolf(Animals):
     def alone(self):
         print(f'{self.name} is a lone animal.')
 
-result1 = Bobcat('Bobcat')
-result1.sleep()
-result1.eat()
-result1.silent()
+res_bob = Bobcat('Bobcat')
+res_lio = Lion('Lion')
+res_tur = Turtle('Turtle')
+res_pig = Pig('Pig')
+res_wolf = Wolf('Wolf')
+
+res_bob.silent()
+res_wolf.eat()
+res_lio.king()
+res_tur.slow()
+res_pig.sleep()
+
+print('|-----|-----|-----|-----|-----|')
+res_animals = [res_bob, res_lio, res_tur, res_pig, res_wolf]
+
+for i in res_animals:
+    print(f'{i} - {isinstance(i, Animals)}')
+
+print('|-----|-----|-----|-----|-----|')
+
+
 
 
 
